@@ -1,0 +1,22 @@
+{
+  "name": "enterprisecomputernetwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelodyHuang3073/enterprisecomputernetwork.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MelodyHuang3073/enterprisecomputernetwork/issues"
+  },
+  "homepage": "https://github.com/MelodyHuang3073/enterprisecomputernetwork#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.5.2"
+  }
+}
