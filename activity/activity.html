@@ -6,9 +6,59 @@
     <title>活動介紹</title>
     <link rel="stylesheet" href="/style.css">
     <script src="../js/loadNav.js"></script>
+    <style>
+        /* 基本樣式，可依需要修改 */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .hero {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 60px 0;
+            background-color: #f2f2f2;
+        }
+
+        .schedule table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .schedule th, .schedule td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .photo-gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 10px 0;
+        }
+
+        .photo-gallery img {
+            height: 200px;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .feedback p {
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
-    <!-- <script src="js/loadNav.js"></script> -->
     <!-- 導覽列 --> 
     <div id="navbar"></div>
 
@@ -17,10 +67,82 @@
         活動介紹
     </div>
 
+    <div class="container">
+        <!-- 活動名稱 -->
+        <h2>活動名稱</h2>
+        <p>範例活動名稱：愛心志工體驗營</p>
 
+        <!-- 活動概述 -->
+        <h2>活動概述</h2>
+        <p>這次活動旨在讓參加者了解志工服務的意義，透過不同的課程與實作，提升服務能力與團隊合作精神。</p>
 
+        <!-- 活動日期 -->
+        <h2>活動日期</h2>
+        <p>2025/7/4 ~ 2025/7/9</p>
 
+        <!-- 日程表 -->
+        <h2>日程表</h2>
+        <div class="schedule">
+            <table>
+                <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th>上午課程</th>
+                        <th>下午課程</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7/4</td>
+                        <td>開幕式 & 團隊分組</td>
+                        <td>志工基礎訓練</td>
+                    </tr>
+                    <tr>
+                        <td>7/5</td>
+                        <td>社區服務課程</td>
+                        <td>實地服務體驗</td>
+                    </tr>
+                    <tr>
+                        <td>7/6</td>
+                        <td>課程工作坊</td>
+                        <td>課程工作坊</td>
+                    </tr>
+                    <tr>
+                        <td>7/7</td>
+                        <td>專題講座</td>
+                        <td>小組討論</td>
+                    </tr>
+                    <tr>
+                        <td>7/8</td>
+                        <td>實地服務體驗</td>
+                        <td>心得分享與反思</td>
+                    </tr>
+                    <tr>
+                        <td>7/9</td>
+                        <td>閉幕式</td>
+                        <td>合影 & 活動結束</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
+        <!-- 活動花絮 -->
+        <h2>活動花絮</h2>
+        <div class="photo-gallery">
+            <img src="/images/photo1.jpg" alt="活動照片1">
+            <img src="/images/photo2.jpg" alt="活動照片2">
+            <img src="/images/photo3.jpg" alt="活動照片3">
+            <img src="/images/photo4.jpg" alt="活動照片4">
+            <img src="/images/photo5.jpg" alt="活動照片5">
+            <!-- 可依需求增加更多照片 -->
+        </div>
+
+        <!-- 服務心得 -->
+        <h2>服務心得</h2>
+        <div class="feedback">
+            <p>這次活動讓我深刻體會到志工服務的重要性，也學到如何與不同背景的人合作完成任務。</p>
+            <p>透過實地服務，我了解了社區的需求與挑戰，也提升了自己的溝通與問題解決能力。</p>
+        </div>
+    </div>
 </body>
-
 </html>
