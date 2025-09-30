@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活動首頁</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="../js/loadNav.js"></script>
+    <style>
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 2rem;
+        }
+
+        .activity-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .activity-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .activity-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .activity-content {
+            padding: 15px;
+        }
+
+        .activity-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .activity-content p {
+            margin: 5px 0;
+        }
+
+        .activity-content .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+
+        .activity-content .btn:hover {
+            background: #388E3C;
+        }
+    </style>
+</head>
+<body>
+    <!-- 導覽列 -->
+    <div id="navbar"></div>
+
+    <!-- 活動首頁 -->
+    <div class="container">
+        <h1>活動首頁</h1>
+        <div class="activity-list">
+            
+            <!-- 活動 1 -->
+            <div class="activity-card">
+                <img src="../images/4.png" alt="活動1縮圖">
+                <div class="activity-content">
+                    <h2>生命關懷之自我探索營</h2>
+                    <p><strong>日期：</strong>2025/7/4 ~ 2025/7/9</p>
+                    <p>以自我探索與生命關懷為核心，透過課程與服務體驗，培養同理心與服務精神。</p>
+                    <a href="activity.html" class="btn">查看更多</a>
+                </div>
+            </div>
+
+            <!-- 活動 2 -->
+            <div class="activity-card">
+                <img src="../images/5.jpg" alt="活動2縮圖">
+                <div class="activity-content">
+                    <h2>青少年成長營</h2>
+                    <p><strong>日期：</strong>2025/8/1 ~ 2025/8/5</p>
+                    <p>針對青少年設計的課程，包含團隊合作、創意挑戰與戶外活動，啟發自我潛能。</p>
+                    <a href="activity2.html" class="btn">查看更多</a>
+                </div>
+            </div>
+
+            <!-- 活動 3 -->
+            <div class="activity-card">
+                <img src="../images/6.jpg!ys" alt="活動3縮圖">
+                <div class="activity-content">
+                    <h2>社區服務志工營</h2>
+                    <p><strong>日期：</strong>2025/9/10 ~ 2025/9/15</p>
+                    <p>透過社區服務與專題講座，學習如何回饋社會，並培養跨世代的溝通能力。</p>
+                    <a href="activity3.html" class="btn">查看更多</a>
