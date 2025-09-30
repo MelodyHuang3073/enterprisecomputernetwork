@@ -1,6 +1,6 @@
 /* 頁面主要容器 */
 .container {
-  width: 90%;
+  width: 70%;
   max-width: 1200px;
   margin: 40px auto;
   font-family: 'Arial', sans-serif;
@@ -9,12 +9,13 @@
 
 /* 首頁封面 */
 .hero {
-  background: linear-gradient(135deg, #74b9ff, #0984e3);
-  color: white;
+  /* background: linear-gradient(135deg, #D1D3D4, #D1D3D4); */
+  background: #f0f0f0;
+  color: #213547;
   font-size: 2rem;
   text-align: center;
   padding: 60px 20px;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   margin-bottom: 40px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -66,6 +67,7 @@
 }
 
 /* Modal 背景 */
+
 .modal {
   position: fixed;
   top: 0;
@@ -74,20 +76,29 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  /* 不依賴 flex，確保一定置中 */
+  display: block;
 }
+
 
 /* Modal 內容 */
 .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: white;
   padding: 20px 30px;
   border-radius: 12px;
   max-width: 600px;
   width: 80%;
-  position: relative;
   animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.modal.hidden {
+  display: none;
 }
 
 .modal-content h3 {
@@ -117,11 +128,11 @@
 /* 動畫效果 */
 @keyframes fadeIn {
   from {
-    transform: translateY(-10px);
+    transform: translate(-50%, -50%) translateY(-10px);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    transform: translate(-50%, -50%) translateY(0);
     opacity: 1;
   }
 }

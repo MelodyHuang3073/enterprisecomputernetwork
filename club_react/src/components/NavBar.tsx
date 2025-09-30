@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './NavBar.css' // 之後可以放你的 CSS
+import './styles/NavBar.css' 
 
 const NavBar: React.FC = () => {
   return (

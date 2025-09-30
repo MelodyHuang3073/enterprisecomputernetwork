@@ -32,7 +32,7 @@ const Members: React.FC = () => {
         fontWeight: 'bold',
         backgroundColor: '#f0f0f0'
     }}>
-        活動介紹
+        社團成員介紹
     </div>
 
     {/* 幹部介紹 */}
