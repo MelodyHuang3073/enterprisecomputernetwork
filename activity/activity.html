@@ -6,10 +6,49 @@
     <title>活動介紹</title>
     <link rel="stylesheet" href="/style.css">
     <script src="../js/loadNav.js"></script>
+    <style>
+        .members {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .member-card {
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 220px;
+            text-align: center;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+        .member-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .member-role {
+            font-weight: bold;
+            color: #0077cc;
+            margin-bottom: 0.5rem;
+        }
+        .member-name {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .member-desc {
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    <!-- <script src="js/loadNav.js"></script> -->
-    <!-- 導覽列 --> 
+    <!-- 導覽列 -->
     <div id="navbar"></div>
 
     <!-- 封面 -->
@@ -17,10 +56,29 @@
         活動介紹
     </div>
 
+    <!-- 幹部介紹 -->
+    <section class="members">
+        <div class="member-card">
+            <img src="images/president.jpg" alt="社長照片">
+            <div class="member-role">社長</div>
+            <div class="member-name">王小明</div>
+            <div class="member-desc">帶領社團，負責全局規劃與方向。</div>
+        </div>
 
+        <div class="member-card">
+            <img src="images/activity.jpg" alt="活動長照片">
+            <div class="member-role">活動長</div>
+            <div class="member-name">李小華</div>
+            <div class="member-desc">規劃社團活動，營造熱鬧氛圍。</div>
+        </div>
 
-
+        <div class="member-card">
+            <img src="images/finance.jpg" alt="總務照片">
+            <div class="member-role">總務</div>
+            <div class="member-name">陳大同</div>
+            <div class="member-desc">管理經費與物資，確保運作順利。</div>
+        </div>
+    </section>
 
 </body>
-
 </html>
