@@ -1,0 +1,51 @@
+/* ActivityDetail.module.css */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.photo-gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.photo-gallery img {
+  height: 200px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.feedback {
+  margin-top: 20px;
+}
+
+.feedback > div {
+  margin-bottom: 15px;
+}
