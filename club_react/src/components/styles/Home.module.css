@@ -1,0 +1,127 @@
+/* 頁面主要容器 */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* 首頁封面 */
+.hero {
+  background: linear-gradient(135deg, #74b9ff, #0984e3);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* 最新消息 */
+.news {
+  background: #f1f2f6;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.news h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  border-left: 5px solid #0984e3;
+  padding-left: 10px;
+}
+
+.news-item {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.more-link {
+  color: #0984e3;
+  cursor: pointer;
+  margin-left: 8px;
+  text-decoration: underline;
+}
+
+.more-link:hover {
+  color: #0652dd;
+}
+
+/* 社團宗旨 */
+.purpose {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #dfe4ea;
+  border-radius: 12px;
+}
+
+.purpose h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #2d3436;
+}
+
+/* Modal 背景 */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal 內容 */
+.modal-content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 80%;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #0984e3;
+}
+
+.modal-content p {
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* 關閉按鈕 */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+}
+
+.close:hover {
+  color: #000;
+}
+
+/* 動畫效果 */
+@keyframes fadeIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

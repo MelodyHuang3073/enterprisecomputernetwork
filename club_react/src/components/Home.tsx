@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Home.css'
+import styles from './styles/Home.module.css'
 
 interface NewsItem {
   id: string
@@ -29,17 +29,17 @@ const Home: React.FC = () => {
   return (
     <div>
       {/* 封面 */}
-      <div className="hero">歡迎來到幼幼社</div>
+      <div className={styles.hero}>歡迎來到幼幼社</div>
 
-      <div className="container">
+      <div className={styles.container}>
         {/* 最新消息 */}
-        <div className="news">
+        <div className={styles.news}>
           <h2>最新消息</h2>
           {newsData.map(item => (
-            <div key={item.id} className="news-item">
+            <div key={item.id} className={styles['news-item']}>
               <strong>{item.title}：</strong>
               <span
-                className="more-link"
+                className={styles['more-link']}
                 onClick={() => openModal(item.id)}
               >
                 點我看更多
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
         </div>
 
         {/* 社團宗旨 */}
-        <div className="purpose">
+        <div className={styles.purpose}>
           <h2>社團宗旨</h2>
           <p>
             幼幼社致力於關懷幼兒的成長與發展，透過康輔活動、陪伴與教育，培養社團成員的服務精神與責任感。我們希望讓孩子們感受到溫暖與快樂，也讓每位成員在互動中成長，建立深厚的友誼。
@@ -61,12 +61,12 @@ const Home: React.FC = () => {
       {newsData.map(item => (
         <div
           key={item.id}
-          className="modal"
+          className={styles.modal}
           style={{ display: activeModal === item.id ? 'block' : 'none' }}
           onClick={closeModal}
         >
-          <div className="modal-content" onClick={e => e.stopPropagation()}>
-            <span className="close" onClick={closeModal}>
+          <div className={styles['modal-content']} onClick={e => e.stopPropagation()}>
+            <span className={styles.close} onClick={closeModal}>
               &times;
             </span>
             <h3>{item.title}</h3>
