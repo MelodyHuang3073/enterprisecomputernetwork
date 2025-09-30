@@ -33,20 +33,26 @@ const Home: React.FC = () => {
 
       <div className={styles.container}>
         {/* 最新消息 */}
-        <div className={styles.news}>
-          <h2>最新消息</h2>
-          {newsData.map(item => (
-            <div key={item.id} className={styles['news-item']}>
-              <strong>{item.title}：</strong>
-              <span
-                className={styles['more-link']}
-                onClick={() => openModal(item.id)}
-              >
-                點我看更多
-              </span>
-            </div>
-          ))}
-        </div>
+      <div className={styles.news}>
+        <h2>最新消息</h2>
+        {newsData.map(item => (
+          <div key={item.id} className={styles['news-item']}>
+            <strong>{item.title}：</strong>
+            {/* 先顯示前 20 個字作為預覽 */}
+            <span>
+              {item.description.slice(0, 20)}
+              {item.description.length > 20 ? '...' : ''}
+            </span>
+            {/* 點擊才打開完整 modal */}
+            <span
+              className={styles['more-link']}
+              onClick={() => openModal(item.id)}
+            >
+              點我看更多
+            </span>
+          </div>
+        ))}
+      </div>
 
         {/* 社團宗旨 */}
         <div className={styles.purpose}>
